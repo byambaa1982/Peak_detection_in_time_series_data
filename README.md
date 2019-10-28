@@ -9,14 +9,12 @@ The fast and powerful methods that we rely on in machine learning, such as using
   * [Overview](#about)
   * [Contact](#contact)
 
-## Installation
-    $ git clone https://github.com/byambaa1982/NN-on-time-series
-    $ cd NN-on-time-series
-    $ python setup.py install
+## Clone
+    $ git clone https://github.com/byambaa1982/Peak_detection_in_time_series_data
+    $ cd Peak_detection_in_time_series_data
+
 
 ## Examples
-### Polynomial Regression
-    $ python mlfromscratch/examples/polynomial_regression.py
 
 <p align="center">
     <img src="https://www.pythonanywhere.com/user/enkhbat/files/home/enkhbat/mysite/flaskr/data/plot.png" width="640"\>
