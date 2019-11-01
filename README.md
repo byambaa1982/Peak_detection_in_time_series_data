@@ -1,4 +1,4 @@
-# Neural Network on Time Series data set
+# Walk Forward Validation using NN model
 
 ## Overview
 The fast and powerful methods that we rely on in machine learning, such as using train-test splits and k-fold cross-validation, do not work in the case of time-series data. This is because they ignore the temporal components inherent in the problem. 
