@@ -17,6 +17,10 @@ The fast and powerful methods that we rely on in machine learning, such as using
 ## Examples
 
 <p align="center">
-    <img src="https://www.pythonanywhere.com/user/enkhbat/files/home/enkhbat/mysite/flaskr/data/plot.png" width="640"\>
+    <img src="https://github.com/byambaa1982/Peak_detection_in_time_series_data/tree/master/images/plot.png" width="640"\>
 </p>
 www.fiverr.com/coderjs
+
+
+![GitHub Logo](/images/plot.png)
+Format: ![Alt Text](url)
