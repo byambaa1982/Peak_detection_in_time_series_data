@@ -12,10 +12,13 @@ from keras.models import Sequential
 from keras.layers import Dense
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt, mpld3
 from matplotlib import pyplot
-
-
+# updated version
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+import sys
 data_coup=pd.read_excel('/Users/enkhbat/fiverr/nurez_damani/nurez_damani-attachments/Statistical Analysis - CIM.xlsx')
 
 
@@ -60,10 +63,11 @@ def model_fit(train, config):
   # separate inputs and outputs
   train_x, train_y = data[:, :-1], data[:, -1]
   # define model
-  model = Sequential()
-  model.add(Dense(n_nodes, activation='relu', input_dim=n_input))
-  model.add(Dense(1))
-  model.compile(loss='mse', optimizer='adam')
+  model = keras.Sequential([layers.Dense(n_nodes, activation=tf.nn.relu, input_dim=n_input),layers.Dense(1)])
+  # model.add(Dense(n_nodes, activation='relu', input_dim=n_input))
+  # model.add(Dense(1))
+  optimizer = tf.keras.optimizers.Adam(.01)
+  model.compile(loss='mean_squared_error', optimizer=optimizer)
   # fit model
   model.fit(train_x, train_y, epochs=n_epochs, batch_size=n_batch, verbose=0)
   return model
@@ -104,7 +108,7 @@ def walk_forward_validation(data, n_test, cfg):
   # estimate prediction error
   error = measure_rmse(test, predictions)
   print(' > %.3f' % error)
-  return error, predictions, test
+  return predictions, test
 
 # Formula for long return
 def long(x):
@@ -183,6 +187,4 @@ def plot_it(true_values, predictions):
   ax.set_ylabel('Ruturn Long')
   ax.set_xlabel('Number of Observation')
   ax.legend()
-  plt.show()
-
-  plot_it(true_values, predictions)
+  return mpld3.show()
