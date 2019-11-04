@@ -67,7 +67,7 @@ I had to reformat excel files in order to make easy for my Neural Network. The f
 
 Next two functions time_series_long() and time_series_short() create new columns using functions long() and short(). 
 
-![Train test split](/images/time_series_long.png)
+![Train test split](/images/times_series_long.png)
 
 The complete short_to_csv() and long_to_csv functions that tie all of this together and create CSV files for modeling. 
 
