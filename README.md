@@ -6,12 +6,12 @@ The fast and powerful methods that we rely on in machine learning, such as using
 
 ## This Section is divided into the following parts
 - [Simple NN for Time Series](#machine-learning-from-scratch)
-  * [Train-Test Split]
-  * [Train-Test Split]
-  * [Series as Supervised Learning]
-  * [Walk-Forward Validation]
-  * [Data Engineering Excel data and convert it into CSV format]
-  * [Run the NN model using a CSV file]
+  * Train-Test Split
+  * Train-Test Split
+  * Series as Supervised Learning
+  * Walk-Forward Validation
+  * Data Engineering Excel data and convert it into CSV format
+  * Run the NN model using a CSV file
   
 ## Train-Test Split
 The train_test_split() function will split the series taking the raw observations and the number of observations to use in the test set as arguments.
