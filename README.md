@@ -92,3 +92,8 @@ The function plot_it() creates chart true vs predicted values.
 
 ![Train test split](/images/plot.png)
 
+If you have anything to ask, please contact me clicking following link? 
+
+www.fiverr.com/coderjs
+
+Thank you
