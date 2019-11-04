@@ -5,7 +5,6 @@ The fast and powerful methods that we rely on in machine learning, such as using
 
 
 ## This Section is divided into the following parts
-- [Simple NN for Time Series](#machine-learning-from-scratch)
   * Train-Test Split
   * Train-Test Split
   * Series as Supervised Learning
