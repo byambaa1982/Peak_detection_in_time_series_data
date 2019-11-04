@@ -6,7 +6,6 @@ The fast and powerful methods that we rely on in machine learning, such as using
 
 ## This Section is divided into the following parts
   * Train-Test Split
-  * Train-Test Split
   * Series as Supervised Learning
   * Walk-Forward Validation
   * Data Engineering Excel data and convert it into CSV format
